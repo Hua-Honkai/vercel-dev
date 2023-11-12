@@ -1,16 +1,17 @@
 {
-    "version": 2,
-    "routes": [
-      {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"},
-      {"src": "/goog/ajax/libs/(.*)","dest": "https://ajax.googleapis.com/ajax/libs/$1"},
-      {"src": "/goog/fonts/(.*)","dest": "https://fonts.googleapis.com/$1"},
-      {"src": "/goog/themes/(.*)","dest": "https://themes.googleusercontent.com/$1"},
-      {"src": "/cdnjs/ajax/libs/(.*)","dest": "https://cdnjs.cloudflare.com/ajax/libs/$1"},
-      {"src": "/goog-gs/www/(.*)","dest": "https://www.gstatic.com/$1"},
-      {"src": "/goog-gs/fonts/(.*)","dest": "https://fonts.gstatic.com/$1"},
-      {"src": "/grava/avatar/(.*)","dest": "https://secure.gravatar.com/avatar/$1"},
-      {"src": "/gith/raw/(.*)","dest": "https://raw.githubusercontent.com/$1"},
-      {"src": "/cloud/(.*)","dest": "https://$1"},
-      {"src": "/ray-test/(.*)","dest": "/api/api"}
-    ]
+  "version": 2,
+  "rewrites": [
+    { "source": "/jsd/(.*)", "destination": "https://cdn.jsdelivr.net/$1" },
+    { "source": "/goog/ajax/libs/(.*)", "destination": "https://ajax.googleapis.com/ajax/libs/$1" },
+    { "source": "/goog/fonts/(.*)", "destination": "https://fonts.googleapis.com/$1" },
+    { "source": "/goog/themes/(.*)", "destination": "https://themes.googleusercontent.com/$1" },
+    { "source": "/cdnjs/ajax/libs/(.*)", "destination": "https://cdnjs.cloudflare.com/ajax/libs/$1" },
+    { "source": "/goog-gs/www/(.*)", "destination": "https://www.gstatic.com/$1" },
+    { "source": "/goog-gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
+    { "source": "/grava/avatar/(.*), "destination": "https://secure.gravatar.com/avatar/$1" },
+    { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
+    { "source": "/ray-test/(.*)", "destination": "/api/api" },
+    { "source": "/cloud/$1", "destination": "https://$1" }
+  ]
 }
+
