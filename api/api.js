@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = (req, res) => {
-    let target = ''
+    let target = 'https://anycast.cloudflare.tunnel.cloud-private.eu.org'
     if (req.url.startsWith('/ray-test')) {
         target = 'https://anycast.cloudflare.tunnel.cloud-private.eu.org'
     }
