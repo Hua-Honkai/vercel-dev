@@ -1,18 +1,23 @@
 {
-    "version": 2,
-    "routes": [
-      {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"},
-      {"src": "/goog/ajax/libs/(.*)","dest": "https://ajax.googleapis.com/ajax/libs/$1"},
-      {"src": "/goog/fonts/(.*)","dest": "https://fonts.googleapis.com/$1"},
-      {"src": "/goog/themes/(.*)","dest": "https://themes.googleusercontent.com/$1"},
-      {"src": "/cdnjs/ajax/libs/(.*)","dest": "https://cdnjs.cloudflare.com/ajax/libs/$1"},
-      {"src": "/goog-gs/www/(.*)","dest": "https://www.gstatic.com/$1"},
-      {"src": "/goog-gs/fonts/(.*)","dest": "https://fonts.gstatic.com/$1"},
-      {"src": "/grava/avatar/(.*)","dest": "https://secure.gravatar.com/avatar/$1"},
-      {"src": "/gith/raw/(.*)","dest": "https://raw.githubusercontent.com/$1"},
-      {"src": "/ray-test/(.*)","dest": "https://anycast.cloudflare.tunnel.cloud-private.eu.org/$1"}
-    ],
   "rewrites": [
+    { "source": "/jsd/:match", "destination": "https://cdn.jsdelivr.net/:match" },
+    { "source": "/jsd/:match", "destination": "https://cdn.jsdelivr.net/:match" },
+    { "source": "/goog/ajax/:match", "destination": "https://ajax.googleapis.com/ajax/:match" },
+    { "source": "/goog/ajax/:match", "destination": "https://ajax.googleapis.com/ajax/:match" },
+    { "source": "/goog/fonts/:match", "destination": "https://fonts.googleapis.com/:match" },
+    { "source": "/goog/fonts/:match", "destination": "https://fonts.googleapis.com/:match" },
+    { "source": "/goog/themes/:match", "destination": "https://themes.googleusercontent.com/:match" },
+    { "source": "/goog/themes/:match", "destination": "https://themes.googleusercontent.com/:match" },
+    { "source": "/cdnjs/ajax/:match", "destination": "https://cdnjs.cloudflare.com/ajax/:match" },
+    { "source": "/cdnjs/ajax/:match", "destination": "https://cdnjs.cloudflare.com/ajax/:match" },
+    { "source": "/goog-gs/www/:match", "destination": "https://www.gstatic.com/:match" },
+    { "source": "/goog-gs/www/:match", "destination": "https://www.gstatic.com/:match" },
+    { "source": "/goog-gs/fonts/:match", "destination": "https://fonts.gstatic.com/:match" },
+    { "source": "/goog-gs/fonts/:match", "destination": "https://fonts.gstatic.com/:match" },
+    { "source": "/grava/:match", "destination": "https://secure.gravatar.com/avatar/:match" },
+    { "source": "/grava/avatar/:match", "destination": "https://secure.gravatar.com/avatar/:match" },
+    { "source": "/gith/raw/:match", "destination": "https://raw.githubusercontent.com/:match" },
+    { "source": "/gith/raw/:match", "destination": "https://raw.githubusercontent.com/:match" },
     { "source": "/cloud/:match/:url*", "destination": "https://:match/:url*" },
     { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" }
   ]
