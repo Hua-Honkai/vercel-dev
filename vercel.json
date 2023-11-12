@@ -1,6 +1,19 @@
 {
     "version": 2,
     "routes": [
-      {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"}
-    ]
+      {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"},
+      {"src": "/goog/ajax/libs/(.*)","dest": "https://ajax.googleapis.com/ajax/libs/$1"},
+      {"src": "/goog/fonts/(.*)","dest": "https://fonts.googleapis.com/$1"},
+      {"src": "/goog/themes/(.*)","dest": "https://themes.googleusercontent.com/$1"},
+      {"src": "/cdnjs/ajax/libs/(.*)","dest": "https://cdnjs.cloudflare.com/ajax/libs/$1"},
+      {"src": "/goog-gs/www/(.*)","dest": "https://www.gstatic.com/$1"},
+      {"src": "/goog-gs/fonts/(.*)","dest": "https://fonts.gstatic.com/$1"},
+      {"src": "/grava/avatar/(.*)","dest": "https://secure.gravatar.com/avatar/$1"},
+      {"src": "/gith/raw/(.*)","dest": "https://raw.githubusercontent.com/$1"},
+      {"src": "/ray-test/(.*)","dest": "https://anycast.cloudflare.tunnel.cloud-private.eu.org/$1"}
+    ],
+  "rewrites": [
+    { "source": "/cloud/:match/:url*", "destination": "https://:match/:url*" },
+    { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" }
+  ]
 }
