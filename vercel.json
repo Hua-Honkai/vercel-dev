@@ -8,7 +8,7 @@
     { "source": "/cdnjs/ajax/libs/(.*)", "destination": "https://cdnjs.cloudflare.com/ajax/libs/$1" },
     { "source": "/goog-gs/www/(.*)", "destination": "https://www.gstatic.com/$1" },
     { "source": "/goog-gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
-    { "source": "/grava/avatar/(.*), "destination": "https://secure.gravatar.com/avatar/$1" },
+    { "source": "/grava/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
     { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
     { "source": "/ray-test/(.*)", "destination": "/api/api" },
     { "source": "/cloud/$1", "destination": "https://$1" }
