@@ -1,24 +1,16 @@
 {
-  "rewrites": [
-    { "source": "/jsd/:match/:url*", "destination": "https://cdn.jsdelivr.net/:match/:url*" },
-    { "source": "/jsd/:match/:url*/", "destination": "https://cdn.jsdelivr.net/:match/:url*/" },
-    { "source": "/goog/ajax/:match/:url*", "destination": "https://ajax.googleapis.com/ajax/:match/:url*" },
-    { "source": "/goog/ajax/:match/:url*/", "destination": "https://ajax.googleapis.com/ajax/:match/:url*/" },
-    { "source": "/goog/fonts/:match/:url*", "destination": "https://fonts.googleapis.com/:match/:url*" },
-    { "source": "/goog/fonts/:match/:url*/", "destination": "https://fonts.googleapis.com/:match/:url*/" },
-    { "source": "/goog/themes/:match/:url*", "destination": "https://themes.googleusercontent.com/:match/:url*" },
-    { "source": "/goog/themes/:match/:url*/", "destination": "https://themes.googleusercontent.com/:match/:url*/" },
-    { "source": "/cdnjs/ajax/:match/:url*", "destination": "https://cdnjs.cloudflare.com/ajax/:match/:url*" },
-    { "source": "/cdnjs/ajax/:match/:url*/", "destination": "https://cdnjs.cloudflare.com/ajax/:match/:url*/" },
-    { "source": "/goog-gs/www/:match/:url*", "destination": "https://www.gstatic.com/:match/:url*" },
-    { "source": "/goog-gs/www/:match/:url*/", "destination": "https://www.gstatic.com/:match/:url*/" },
-    { "source": "/goog-gs/fonts/:match/:url*", "destination": "https://fonts.gstatic.com/:match/:url*" },
-    { "source": "/goog-gs/fonts/:match/:url*/", "destination": "https://fonts.gstatic.com/:match/:url*/" },
-    { "source": "/grava/avatar/:match/:url*", "destination": "https://secure.gravatar.com/avatar/:match/:url*" },
-    { "source": "/grava/avatar/:match/:url*/", "destination": "https://secure.gravatar.com/avatar/:match/:url*/" },
-    { "source": "/gith/raw/:match/:url*", "destination": "https://raw.githubusercontent.com/:match/:url*" },
-    { "source": "/gith/raw/:match/:url*/", "destination": "https://raw.githubusercontent.com/:match/:url*/" },
-    { "source": "/cloud/:match/:url*", "destination": "https://:match/:url*" },
-    { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" }
-  ]
+    "version": 2,
+    "routes": [
+      {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"},
+      {"src": "/goog/ajax/libs/(.*)","dest": "https://ajax.googleapis.com/ajax/libs/$1"},
+      {"src": "/goog/fonts/(.*)","dest": "https://fonts.googleapis.com/$1"},
+      {"src": "/goog/themes/(.*)","dest": "https://themes.googleusercontent.com/$1"},
+      {"src": "/cdnjs/ajax/libs/(.*)","dest": "https://cdnjs.cloudflare.com/ajax/libs/$1"},
+      {"src": "/goog-gs/www/(.*)","dest": "https://www.gstatic.com/$1"},
+      {"src": "/goog-gs/fonts/(.*)","dest": "https://fonts.gstatic.com/$1"},
+      {"src": "/grava/avatar/(.*)","dest": "https://secure.gravatar.com/avatar/$1"},
+      {"src": "/gith/raw/(.*)","dest": "https://raw.githubusercontent.com/$1"},
+      {"src": "/cloud/(.*)","dest": "https://$1"},
+      {"src": "/ray-test/(.*)","dest": "https://anycast.cloudflare.tunnel.cloud-private.eu.org/$1"}
+    ]
 }
