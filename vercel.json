@@ -8,7 +8,7 @@
     { "source": "/goog/fonts:url*", "destination": "https://fonts.googleapis.com:url*" },
     { "source": "/goog/themes:url*", "destination": "https://themes.googleusercontent.com:url*" },
     { "source": "/goog/themes:url*", "destination": "https://themes.googleusercontent.com:url*" },
-    { "source": "/cdnjs/ajax:url*", "destination": "https://cdnjs.cloudflare.com/ajax:url*" },
+    { "source": "/cdnjs/ajax:url*", "destination": "https://cdnjs.cloudflare.com/ajax:url*" }，
     { "source": "/cdnjs/ajax:url*", "destination": "https://cdnjs.cloudflare.com/ajax:url*" },
     { "source": "/goog-gs/www:url*", "destination": "https://www.gstatic.com:url*" },
     { "source": "/goog-gs/www:url*", "destination": "https://www.gstatic.com:url*" },
