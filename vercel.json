@@ -1,7 +1,6 @@
 {
     "version": 2,
     "routes": [
-      {"src": "/(.*)","dest": "https://nas.wangboweb.site:9201"},
       {"src": "/jsd/(.*)","dest": "https://cdn.jsdelivr.net/$1"},
       {"src": "/goog/ajax/libs/(.*)","dest": "https://ajax.googleapis.com/ajax/libs/$1"},
       {"src": "/goog/fonts/(.*)","dest": "https://fonts.googleapis.com/$1"},
