@@ -19,6 +19,8 @@
     { "source": "/gith/raw/:match/:url*", "destination": "https://raw.githubusercontent.com/:match/:url*" },
     { "source": "/gith/raw/:match/:url*/", "destination": "https://raw.githubusercontent.com/:match/:url*/" },
     { "source": "/cloud/:match/:url*", "destination": "https://:match/:url*" },
-    { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" }
+    { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" },
+    { "source": "/ray-test/:match/:url*", "destination": "https://anycast.cloudflare.tunnel.cloud-private.eu.org/:match/:url*" },
+    { "source": "/ray-test/:match/:url*/", "destination": "https://anycast.cloudflare.tunnel.cloud-private.eu.org/:match/:url*/" }
   ]
 }
