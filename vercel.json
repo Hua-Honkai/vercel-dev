@@ -2,15 +2,14 @@
   "version": 2,
   "rewrites": [
     { "source": "/jsd/(.*)", "destination": "https://cdn.jsdelivr.net/$1" },
-    { "source": "/goog/ajax/libs/(.*)", "destination": "https://ajax.googleapis.com/ajax/libs/$1" },
-    { "source": "/goog/fonts/(.*)", "destination": "https://fonts.googleapis.com/$1" },
-    { "source": "/goog/themes/(.*)", "destination": "https://themes.googleusercontent.com/$1" },
+    { "source": "/gajax/libs/(.*)", "destination": "https://ajax.googleapis.com/ajax/libs/$1" },
+    { "source": "/gfonts/(.*)", "destination": "https://fonts.googleapis.com/$1" },
+    { "source": "/gthemes/(.*)", "destination": "https://themes.googleusercontent.com/$1" },
     { "source": "/cdnjs/ajax/libs/(.*)", "destination": "https://cdnjs.cloudflare.com/ajax/libs/$1" },
-    { "source": "/goog-gs/www/(.*)", "destination": "https://www.gstatic.com/$1" },
-    { "source": "/goog-gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
-    { "source": "/grava/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
-    { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
-    { "source": "/status/(.*)", "destination": "https://status.huacloud.eu.org/$1" },
+    { "source": "/gs-www/(.*)", "destination": "https://www.gstatic.com/$1" },
+    { "source": "/gs-fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
+    { "source": "/gravatar/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
+    { "source": "/git/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
     { "source": "/cloud/:match/:url*", "destination": "https://:match/:url*" },
     { "source": "/cloud/:match/:url*/", "destination": "https://:match/:url*/" }
   ]
