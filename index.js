@@ -1,17 +1,18 @@
-const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const app = express();
+module.exports = (req, res) => {
+  let targetUrl = req.url.slice(1); // remove '/' from the URL
+  targetUrl = 'https://' + targetUrl;
 
-app.use('/cloud', createProxyMiddleware({
-  router: function(req) {
-    return 'https://' + req.url.slice(1);
-  },
-  changeOrigin: true,
-}));
+  const options = {
+    target: targetUrl,
+    changeOrigin: true,
+    pathRewrite: (path, req) => path.split('/').slice(1).join('/'),
+    onProxyRes: function (proxyRes, req, res) {
+      proxyRes.headers['access-control-allow-origin'] = '*';
+    }
+  };
 
-app.use((req, res) => {
-  res.send('Hello World');
-});
-
-module.exports = app;
+  const proxy = createProxyMiddleware(options);
+  proxy(req, res, () => {});
+};
