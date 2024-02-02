@@ -10,7 +10,7 @@
     { "source": "/gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
     { "source": "/gravatar/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
     { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
-    { "source": "/cloud/:match", "destination": "https://:match" }
+    { "source": "/cloud/:match/:url", "destination": "https://:match/:url" }
   ]
 }
 
