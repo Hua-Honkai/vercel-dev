@@ -4,11 +4,10 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/cloud', createProxyMiddleware({
-  target: 'https://',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/cloud/': '/',
+  router: function(req) {
+    return 'https://' + req.url.slice(1);
   },
+  changeOrigin: true,
 }));
 
 app.use((req, res) => {
