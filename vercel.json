@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
   "rewrites": [
     { "source": "/jsd/(.*)", "destination": "https://cdn.jsdelivr.net/$1" },
     { "source": "/goo/ajax/libs/(.*)", "destination": "https://ajax.googleapis.com/ajax/libs/$1" },
@@ -10,7 +13,7 @@
     { "source": "/gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
     { "source": "/gravatar/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
     { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
-    { "source": "/cloud/(.*)", "destination": "https://$1" }
+    { "source": "/(.*)", "destination": "index.js" }
   ]
 }
 
