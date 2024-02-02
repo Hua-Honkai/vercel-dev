@@ -13,7 +13,7 @@
     { "source": "/gs/fonts/(.*)", "destination": "https://fonts.gstatic.com/$1" },
     { "source": "/gravatar/avatar/(.*)", "destination": "https://secure.gravatar.com/avatar/$1" },
     { "source": "/gith/raw/(.*)", "destination": "https://raw.githubusercontent.com/$1" },
-    { "source": "/(.*)", "destination": "index.js" }
+    { "source": "/cloud/(.*)", "destination": "http://dev-5m5w.onrender.com/cloud/$1" }
   ]
 }
 
